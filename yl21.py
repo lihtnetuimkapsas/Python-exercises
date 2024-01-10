@@ -2,7 +2,23 @@
 
 
 
-num = int(input("x=: "))
+import random
 
-for i in range(1, 13):
-    print(num, "x", i, "=", num*i)
+def arvu_arvamise_mang():
+    arvuti_arv = random.randint(0, 100)
+    katsete_arv = 0
+
+    while True:
+        kasutaja_pakkumine = int(input("Paku arv nullist sajani: "))
+        katsete_arv += 1
+
+        if kasutaja_pakkumine == arvuti_arv:
+            print(f"Õige! Arvasid ära arvu {arvuti_arv} {katsete_arv} katsega.")
+            break
+        elif kasutaja_pakkumine < arvuti_arv:
+            print("Pakkumine on liiga väike. Proovi uuesti!")
+        else:
+            print("Pakkumine on liiga suur. Proovi uuesti!")
+
+if __name__ == "__main__":
+    arvu_arvamise_mang()
