@@ -7,3 +7,10 @@
 a = float(input("Esimese külje pikkus: "))
 b = float(input("Teise külje pikkus: "))
 c = float(input("Kolmanda külje pikkus: "))
+
+if a != b and b != c and a != c:
+    print("Tegu on erikylgse kolmnurgaga.")
+elif a == b or a == c or b == c:
+    print("Tegu on vordhaarse kolmnurgaga")
+elif a == b and b == c and c == a:
+    print("Tegu on vordkulgse kolmnurgaga")

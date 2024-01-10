@@ -4,7 +4,7 @@
 aasta = int(input("Sisesta aasta: "))
 if (aasta % 400 == 0):
     print(str(aasta) + " on liigaasta")
-elif(aasta % 4 == 0) and ( arv % 100 != 0):
+elif(aasta % 4 == 0) and ( aasta % 100 != 0):
     print(str(aasta) + " on liigaasta")
 else:
     print(str(aasta) + " on lihtaasta")
