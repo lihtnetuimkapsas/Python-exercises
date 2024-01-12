@@ -19,6 +19,3 @@ def arvu_arvamise_mang():
             print("Pakkumine on liiga väike. Proovi uuesti!")
         else:
             print("Pakkumine on liiga suur. Proovi uuesti!")
-
-if __name__ == "__main__":
-    arvu_arvamise_mang()
